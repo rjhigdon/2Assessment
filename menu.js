@@ -105,11 +105,11 @@ console.log(pizza)
 //CODE HERE
 
 let foodArr = [
-    { name:'Bruschetta', price: 12.99, category: 'appetizer', popularity: 6, rating: 6, tags: ['appetizer', 'non GF', 'vegetables']},
-    {name:'cannoli', price: 10, category: 'dessert', popularity: 10, rating: 9, tags: ['rich', 'dessert','chocolate']},
+    { name:'Bruschetta', price: 12.99, category: 'appetizer', popularity: 6, rating: 8, tags: ['appetizer', 'non GF', 'vegetables']},
+    {name:'cannoli', price: 10, category: 'dessert', popularity: 10, rating: 10, tags: ['rich', 'dessert','chocolate']},
     {name:'Rigatoni', price: 17, category: 'entree', popularity: 6, rating: 8, tags: ['baked','marinara', 'meat']},
     {name:'Vodka penne', price: 19, category: 'entree', popularity: 10, rating: 10, tags: ['vodka sauce', 'chicken', 'blackened Chicken', 'meat']},
-    {name:'peroni', price: 9, category: 'drink', popularity: 10, rating: 7, tags: ['beer']},
+    {name:'peroni', price: 9, category: 'drink', popularity: 10, rating: 8, tags: ['beer']},
 
 ]
 
@@ -126,18 +126,17 @@ let foodArr = [
 */
 
 //CODE HERE
+//I cannot figure out how to get this to fileter out by accessing the tags property the analyzing the array for hits on the tag and filtering that out. I tried it two separate ways and i cannot fuigre out how to make it quite work
 
-const filteredFood = foodArr.filter((arr, ) => {
-    if(foodArr.tags.includes(tag){
-        return true
-    })
-})
+// const filteredFood = foodArr.filter((tag)foodArr.tags.includes('meat'))
+// console.log(filteredFood)
 
+////// OR ///////
 
-console.log('meat')
-console.log(filteredFood)
-// I am trying to pass the value 'meat' through the parameter 'tag' to then filter any foods with that name but i cant quite get the syntax to go my way. or I am simply doing it wring top to bottom
-
+// const filteredFood = foodArr.filter(callback)
+// let callback = (arr) =>{
+//     if(arr.tags.includes('meat'))
+// }
 //////////////////PROBLEM 5////////////////////
 /* 
     Now let's write a function that's a little
