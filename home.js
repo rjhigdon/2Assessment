@@ -79,17 +79,17 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 // CODE HERE
 
-let canWeDeliver = (zipcode) =>{
-    for(i = 0; i < deliveryAreaZipCodes.length; i++){
-        if(deliveryAreaZipCodes[i] === zipcode){
-            console.log("You're in our delivery zone")
-        }
-        if(deliveryAreaZipCodes[i] !== zipcode){
-            console.log("Sorry, you're not in our delivery zone")
-        } break;
-    }
-}
-canWeDeliver(85205)
+// let canWeDeliver = (zipcode) =>{
+//     for(i = 0; i < deliveryAreaZipCodes.length; i++){
+//         if(deliveryAreaZipCodes[i] === zipcode){
+//             console.log("You're in our delivery zone")
+//         }
+//         if(deliveryAreaZipCodes[i] !== zipcode){
+//             console.log("Sorry, you're not in our delivery zone")
+//         } break;
+//     }
+// }
+// canWeDeliver(85205)
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -144,12 +144,6 @@ deals[0].title = '10% off'
 //CODE HERE
 
 let newDesc = deals[1].desc.replace('March!', 'April!') 
-
 let noWSDesc = newDesc.trim()
+console.log(noWSDesc)
 
-// This last question is stumping me a bit. I have the new description with march switched to April assigned to "newDesc"
-//I have the new noWSDesc assigned to the same desc string without whitespace,
-//but i cannot figure out hwo to cleanly insert that into the property slot without just using...
-deals[1].desc = noWSDesc //and then
-//console.log(deals)
-//but something tells me this was not the 'right way' to do it and certainly not the most efficient way

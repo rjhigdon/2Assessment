@@ -126,7 +126,7 @@ let foodArr = [
 */
 
 //CODE HERE
-//I cannot figure out how to get this to fileter out by accessing the tags property the analyzing the array for hits on the tag and filtering that out. I tried it two separate ways and i cannot fuigre out how to make it quite work
+//I cannot figure out how to get this to filter out by accessing the tags property the analyzing the array for hits on the tag and filtering that out. I tried it two separate ways and i cannot fuigre out how to make it quite work
 
 // const filteredFood = foodArr.filter((tag)foodArr.tags.includes('meat'))
 // console.log(filteredFood)

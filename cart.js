@@ -35,9 +35,22 @@ const cart = [
 
 //CODE HERE
 
- const summedPrice = cart.reduce((acc, curr) => acc + curr)
+// function totalCost (priceArr.reduce(acc, curr)){
+//     return acc + curr
+// }
 
- console.log(summedPrice)
+let priceArr = []
+function arrMaker(arr){
+    for(i = 0; i < arr.length; i++){
+        priceArr.push(arr[i].price)
+    }
+}
+
+arrMaker(cart)
+const totalPrice = priceArr.reduce((acc, curr) => acc + curr)
+console.log(totalPrice)
+
+// can't wuite get this one to a place where it is pulling in all the relevant information in a clear way
 
 //////////////////PROBLEM 2////////////////////
 /*  
