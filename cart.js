@@ -41,13 +41,13 @@ let priceArr = [] //declares an array to which all the values of cart.price can 
 function totalMaker (callback){
     const total = priceArr.reduce(function(acc, curr){
     return acc + curr
-    return total  // this is really where the code falls apart, constructing the callback and figuring out how to get the values to return in the proper way. I tried tweaking this numerous ways from the moving and removing of 'return total'. all different ways of typing out the .reduce portion, and the const totalMaker part... and I cannot figure out the combo of things to get the return. where im slightly typoing or if it's rotten from the ground up is beyond me at this point
+    return total  // this is really where the code falls apart, constructing the callback and figuring out how to get the values to return in the proper way. I tried tweaking this numerous ways from the moving and removing of 'return total'. all different ways of typing out the .reduce portion, and the const totalMaker part... and I cannot figure out the combo of things to get the return. whether im slightly typoing or if it's rotten from the ground up is beyond me at this point
 })
 }
 
 
 
-function arrMaker(arr){ //i believe this part is correct. I know it returns what i need it to by console.logging priceArr, but maybe i have it structured in a way that doesnt allow totalMaker to access it properly.. idk
+function arrMaker(arr){ //i believe this part is correct. I know it returns what i need it to by console.logging priceArr, but maybe i have it structured in a way that doesnt allow totalMaker to access it properly... idk
     for(i = 0; i < arr.length; i++){
         priceArr.push(arr[i].price)
         return priceArr

@@ -178,6 +178,10 @@ let foodArr = [
 
 //CODE HERE
 
+function FilterByProperty(property, number, type){
+    filteredPropArr = []
+    
+}
 
 /*
     Invoke the `filterByProperty` function passing
