@@ -146,4 +146,3 @@ deals[0].title = '10% off'
 let newDesc = deals[1].desc.replace('March!', 'April!') 
 let noWSDesc = newDesc.trim()
 console.log(noWSDesc)
-
